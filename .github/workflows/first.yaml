@@ -1,0 +1,10 @@
+name: hello-world
+on:  WorkflowDispatch
+# in a workflow we can have only one job
+jobs:
+  build:
+    # this is the agent - runners
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World Action
+        run: echo "Hello, World!"
