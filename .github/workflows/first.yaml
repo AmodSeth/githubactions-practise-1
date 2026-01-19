@@ -1,4 +1,16 @@
-name: hello-world
+# name: hello-world
+# on: workflow_dispatch
+# # in a workflow we can have only one job
+# jobs:
+#   build:
+#     # this is the agent - runners
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Hello World Action
+#         run: echo "Hello, World!"
+
+
+name: hello-world-multiple-lines
 on: workflow_dispatch
 # in a workflow we can have only one job
 jobs:
@@ -7,4 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello World Action
-        run: echo "Hello, World!"
+        run: |
+          echo "This is line one"
+          echo "This is line two"
